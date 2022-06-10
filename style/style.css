@@ -101,13 +101,20 @@ body {
 
 .formContent,
 .someTextContainer,
-.button,
 .login {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 24px;
+}
+
+.button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4px;
 }
 
 .form {
@@ -179,4 +186,27 @@ body {
     color: #2180c0;
     background: white;
     transition: 0.5s;
+}
+
+.txtContainer {
+    width: 85%;
+}
+
+.txtContainer p {
+    margin: 0;
+    color: white;
+    font-weight: 300;
+}
+
+.txtContainer a {
+    margin: 0;
+    color: white;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.txtContainer a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+    transition: 0.25s;
 }
