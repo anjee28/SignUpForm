@@ -78,7 +78,7 @@ body {
 }
 
 .formContainer {
-    outline: 3px solid black;
+    
     width: 68vw;
     flex-grow: 1;
     display: flex;
@@ -164,6 +164,17 @@ body {
 
 .column input:valid {
     outline: 2px solid #2180c0;
+}
+
+#match {
+    visibility: hidden;
+}
+
+#match p{
+    margin: 0;
+    font-size: 12px;
+    margin-top: 4px;
+    color: red;
 }
 
 .btnContainer {

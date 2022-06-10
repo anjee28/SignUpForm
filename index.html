@@ -22,21 +22,21 @@
             </div> 
                    
         </div>
-        <div class="formContainer">
-            <div class="someTextContainer">
-                <div class="someText">
-                    <p style="margin: 0;">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
-                    <p style="margin: 0;">Sign up <em>now</em> to get started.</p>
-                    <p>You <em>know</em> you want to.</p>
-                </div>                
-            </div>
-            <div class="formContent">
-                <div class="form">
-                    <div style="margin-bottom: 16px;">
-                        <p style="margin: 0;">Let's do this!</p>
-                    </div>
-                    <div>
-                        <form action="post">
+        <form action="" method="post">
+            <div class="formContainer">
+                <div class="someTextContainer">
+                    <div class="someText">
+                        <p style="margin: 0;">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
+                        <p style="margin: 0;">Sign up <em>now</em> to get started.</p>
+                        <p>You <em>know</em> you want to.</p>
+                    </div>                
+                </div>
+                <div class="formContent">
+                    <div class="form">
+                        <div style="margin-bottom: 16px;">
+                            <p style="margin: 0;">Let's do this!</p>
+                        </div>
+                        <div>
                             <div class="row">
                                 <div class="column">
                                     <div style="margin-bottom: 8px;"><label  for="firstName">FIRST NAME</label></div>
@@ -54,35 +54,38 @@
                                 </div>
                                 <div class="column">
                                     <div style="margin-bottom: 8px;"><label for="hpeon">PHONE NUMBER</label></div>
-                                    <div><input type="number" name="phone" id="phone" required></div>
+                                    <div><input type="number" name="phone" id="phone" minlength="9" required></div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="column">
                                     <div style="margin-bottom: 8px;"><label for="password">PASSWORD</label ></div>
                                     <div><input type="password" name="password" id="password" required></div>
+                                    <div id="match">
+                                        <p>*Passwords does not match</p>
+                                    </div>
                                 </div>
                                 <div class="column">
                                     <div style="margin-bottom: 8px;"><label for="rePassword">CONFIRM PASSWORD</label></div>
                                     <div><input type="password" name="rePassword" id="rePassword" required></div>
                                 </div>
                             </div>
-                        </form>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="button">
+                    <div class="btnContainer">
+                        <button type="submit">Sign Up</button>
                     </div>
                 </div>
-                
-            </div>
-            <div class="button">
-                <div class="btnContainer">
-                    <button type="submit">Sign Up</button>
+                <div class="login">
+                    <div class="txtContainer">
+                        <p>Already have a account? <a href="#">Log in</a></p>
+                    </div>
                 </div>
             </div>
-            <div class="login">
-                <div class="txtContainer">
-                    <p>Already have a account? <a href="#">Log in</a></p>
-                </div>
-            </div>
-        </div>
+        </form>    
     </div>
 </body>
 </html>
