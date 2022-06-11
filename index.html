@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/normalize.css">
     <link rel="stylesheet" href="./style/style.css">
+    <script defer src="./script/script.js"></script>
     <title>Sign Up</title>
 </head>
 <body>
@@ -49,18 +50,18 @@
                             </div>
                             <div class="row">
                                 <div class="column">
-                                    <div style="margin-bottom: 8px;"><label for="email">EMAIL</label></div>
+                                    <div style="margin-bottom: 8px;"><label for="email">EMAIL ADDRESS</label></div>
                                     <div><input type="email" name="email" id="email" required></div>
                                 </div>
                                 <div class="column">
                                     <div style="margin-bottom: 8px;"><label for="hpeon">PHONE NUMBER</label></div>
-                                    <div><input type="number" name="phone" id="phone" minlength="9" required></div>
+                                    <div><input type="number" name="phone" id="phone" required minlength="9"></div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="column">
-                                    <div style="margin-bottom: 8px;"><label for="password">PASSWORD</label ></div>
-                                    <div><input type="password" name="password" id="password" required></div>
+                                    <div style="margin-bottom: 8px;"><label for="password">PASSWORD (Minimum 8 Characters)</label ></div>
+                                    <div><input type="password" name="password" id="password" required minlength="8"></div>
                                     <div id="match">
                                         <p>*Passwords does not match</p>
                                     </div>
@@ -76,7 +77,7 @@
                 </div>
                 <div class="button">
                     <div class="btnContainer">
-                        <button type="submit">Sign Up</button>
+                        <button type="submit" id="submit">Sign Up</button>
                     </div>
                 </div>
                 <div class="login">

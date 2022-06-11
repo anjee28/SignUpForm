@@ -77,8 +77,10 @@ body {
     font-weight: 300;
 }
 
-.formContainer {
-    
+form {
+    display: flex;
+}
+.formContainer {    
     width: 68vw;
     flex-grow: 1;
     display: flex;
@@ -88,14 +90,14 @@ body {
 }
 
 .someTextContainer{
-    height: 30vh;
+    height: 15vh;
 ;
 }
 
 .someText {
     width: 85%;
     color: white;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 300;
 }
 
